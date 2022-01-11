@@ -1,0 +1,33 @@
+<div>
+  <table class='table' *ngIf='races.length'>
+    <thead>
+    <tr>
+      <th>
+        Race
+      </th>
+      <th>
+        Circuit
+      </th>
+      <th>
+        Location
+      </th>
+      <th>
+        Date
+      </th>
+      <th>
+        Time
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor='let race of races' >
+      <td>{{race.raceName}}</td>
+      <td>{{race.Circuit.Location.locality}}</td>
+      <td>{{race.Circuit.Location.country}}</td>
+      <td>{{race.date}}</td>
+      <td>{{race.time}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

@@ -71,10 +71,15 @@
               "browserTarget": "f1app:build:production"
             },
             "development": {
-              "browserTarget": "f1app:build:development"
+              "browserTarget": "f1app:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+
+            "port": 4202
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
