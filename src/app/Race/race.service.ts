@@ -16,7 +16,7 @@ export class RaceService {
 
   getRaceCalendar(): Observable<IRace[]> {
     console.log("Hello there from the get request.");
-    return this.http.get<IRace[]>(this.rootUrl + '/v1/calendar');
+    return this.http.get<IRace[]>(this.rootUrl + '/v1/historic');
   }
 
   getSpecificRace(round : number): Observable<IRace> {
